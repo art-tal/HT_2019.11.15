@@ -50,3 +50,73 @@ header .user {
 	height: 48px;
 	margin: 10px 0;
 }
+
+/*//////////MAIN///////////*/
+
+main h1, main h2 {
+	font-family: "SegoeWPLight", sans-serif;
+	color: #555;
+	/*font-weight: 300;*/
+	text-align: center;
+    padding-bottom: 20px;
+}
+
+main h1 {
+	border-bottom: 1px solid #F9F9F9;
+}
+
+main .wrap {
+	border: 1px solid #E9E9E9;
+	border-radius: 4px;
+}
+
+article {
+	border-bottom: 1px solid #E9E9E9;
+	width: 100%;
+	padding: 15px 20px;
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+}
+
+article img {
+	margin-right: 20px;
+}
+
+article header {
+	display: inline-block;
+}
+
+article header h1 {
+	font-family: "RobotoRegular", sans-serif;
+	font-size: 18px;
+	font-weight: 700;
+	margin: 0;
+	margin-bottom: 15px;
+}
+
+article span {
+	float: right;
+	font-size: 14px;
+	color: #999;
+}
+
+main .wrap article p {
+	font-size: 16px;
+    word-spacing: 2px;
+}
+
+main button {
+	width: 100%;
+	padding: 10px;
+	margin-top: 20px;
+	border: none;
+	border-radius: 4px;
+}
+
+main button.more_news {	
+	color: #fff;
+	background-color: #6C757D;
+}
