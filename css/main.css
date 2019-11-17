@@ -120,3 +120,46 @@ main button.more_news {
 	color: #fff;
 	background-color: #6C757D;
 }
+
+main .grid_container {
+	display: grid;
+	grid-template-columns: 3fr 1fr 3fr;
+	grid-auto-rows: 1fr;
+	grid-column-gap: 15px;
+	grid-row-gap: 3px;
+	-ms-align-items: center;
+	align-items: center;
+	justify-content: center;
+}
+
+.left_arrow, .right_arrow {
+	border: 1px solid #aaa;
+	border-radius: 3px;
+	padding: 5px 10px;
+    width: max-content;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.grid_container .left_arrow {
+	text-align: right;
+	justify-self: end;
+
+}
+
+main .grid_container .date {
+	padding: 6px 10px;
+	font-size: 14px;
+	letter-spacing: -0.5px;
+	font-weight: 300;
+}
+
+.reward span {
+	font-size: 18px;
+	font-weight: bold;
+}
+
+main button.more_rewards {
+	color: #000;
+	background-color: #F8F9FA;
+}
