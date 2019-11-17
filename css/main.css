@@ -59,9 +59,15 @@ main h1, main h2 {
 	/*font-weight: 300;*/
 	text-align: center;
     padding-bottom: 20px;
+    margin-bottom: 0;
 }
 
 main h1 {
+	/*border-bottom: 1px solid #F9F9F9;*/
+}
+
+main hr {
+	margin-top: 0;
 	border-bottom: 1px solid #F9F9F9;
 }
 
@@ -162,4 +168,138 @@ main .grid_container .date {
 main button.more_rewards {
 	color: #000;
 	background-color: #F8F9FA;
+}
+
+
+
+/*//////////Page Homework///////////*/
+
+main {
+	position: relative;
+}
+
+main .legend {
+	margin-top: 20px;
+	text-align: right;
+	position: absolute;
+	right: 10px;
+	top: 0;
+}
+
+main .legend label {
+	color: #777;
+}
+
+main .legend > div {
+	display: inline-block;
+	width: 20px;
+	height: 20px;
+	border: 1px solid #E4E4E4;
+	border-radius: 50%;
+	vertical-align: middle;
+}
+
+.current {
+/*main .legend .current {*/
+	background-color: #F5F5F5;
+}
+
+.reviewed {
+/*main .legend .reviewed {	*/
+	background-color: #6FD084;
+	color: #fff;
+}
+
+.under_review {
+/*main .legend .under_review {*/
+	background-color: #37B0C1;
+	color: #fff;
+}
+
+.overdue {
+/*main .legend .overdue {*/
+	background-color: #F98691;
+	color: #fff;
+}
+
+main section {
+	width: 100%;
+}
+
+main section h2 {
+	text-align: left;
+	border-bottom: 1px solid #F9F9F9;	
+}
+
+main section .row {
+	margin-top: 15px;
+}
+
+.col-md-4 {
+	padding: 0 10px;
+}
+
+main section article {
+	display: block;
+	border: 1px solid #DDE1E5;
+	border-radius: 4px;
+	padding: 20px;
+	/*margin-right: 30px;*/
+	border-radius: 4px;
+}
+
+main section article header h1{
+	display: block;
+	padding-bottom: 0;
+	margin-bottom: 10px;
+}
+
+main section article header p {
+	display: block;
+}
+
+main section article form input,
+main section article form label {
+	padding: 10px;
+}
+
+main section article form input {
+	width: 75%;
+	border: 1px solid #DDE1E5;
+	border-radius: 3px 0 0 3px
+}
+
+main section article form label {
+	width: 25%;
+	margin-bottom: 0;
+	border: 1px solid #DDE1E5;
+	border-radius: 0 3px 3px 0;
+	background-color: #E9ECEF;
+	text-align: center;
+}
+
+.reviewed header > h1, 
+.under_review header > h1, 
+.overdue header > h1 {
+/*.reviewed p, .under_review p, .overdue p, {*/
+	color: #fff;
+}
+
+main section article form button {
+	width: 50%;
+	margin-top: 0;
+	border: 1px solid #DDE1E5;
+	background: none;
+}
+
+main section article form button.download {
+	border-radius: 3px 0 0 3px;
+}
+
+main section article form button.remove {
+	border-radius: 0 3px 3px 0;
+}
+
+main section article form button img {
+	width: 16px;
 }

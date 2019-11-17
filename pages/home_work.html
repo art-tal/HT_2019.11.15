@@ -20,7 +20,7 @@
 				<div class="col-md-11">
 					<img src="../icons/chalkboard-teacher-solid.png" alt="chalkboard-teacher" class="logo">
 					<ul>
-						<li><a href="#">Home</a></li>
+						<li><a href="../index.html">Home</a></li>
 						<li><a href="#" class="active">Homework</a></li>
 						<li><a href="#">Settings</a></li>
 					</ul>
@@ -36,10 +36,60 @@
 		
 		<h1>Home work</h1>
 
-		<div class="row">
-			
-			
+		<div class="legend">
+			<label for="current">current - </label>
+			<div id="current" class="current"></div> <br>
+
+			<label for="reviewed">reviewed - </label>
+			<div id="reviewed" class="reviewed"></div> <br>
+
+			<label for="under_review">under review - </label>
+			<div id="under_review" class="under_review"></div> <br>
+
+			<label for="overdue">overdue - </label>
+			<div id="overdue" class="overdue"></div>
 		</div>
+
+		<section>
+			<h2>JavaScript</h2>
+			<div class="row">
+				<div class="col-md-4">
+					<article class="current">
+						<header>
+							<h1>Loops</h1>
+						</header>
+						<p>10/05/2019</p>
+						<form action="#" method="post" name="browse">
+							<input type="text" placeholder="Choose file" id="choose"><label for="choose">Browse</label>
+						</form>
+					</article>
+				</div>
+
+				<div class="col-md-4">
+					<article class="under_review">
+						<header>
+							<h1>Conditional statements</h1>
+						</header>
+						<p>8/05/2019</p>
+						<form action="#" method="post" name="under_review">
+							<button class="download"><img src="../icons/download-solid.png" alt="download">Your file</button><button class="remove"><img src="../icons/trash-alt-solid.png" alt="trash">Remove</button>
+						</form>
+					</article>
+				</div>
+
+				<div class="col-md-4">
+					<article class="under_review">
+						<header>
+							<h1>Varables</h1>
+						</header>
+						<p>5/05/2019</p>
+						<form action="#" method="post" name="under_review">
+							<button class="download"><img src="../icons/download-solid.png" alt="download">Your file</button><button class="remove"><img src="../icons/trash-alt-solid.png" alt="trash">Remove</button>
+						</form>
+					</article>
+				</div>
+			</div>
+		</section>
 
 	</main>
 
