@@ -224,6 +224,7 @@ main .legend > div {
 
 main section {
 	width: 100%;
+	margin-bottom: 50px;
 }
 
 main section h2 {
@@ -246,12 +247,28 @@ main section article {
 	padding: 20px;
 	/*margin-right: 30px;*/
 	border-radius: 4px;
+	margin-bottom: 10px;
 }
 
 main section article header h1{
 	display: block;
 	padding-bottom: 0;
 	margin-bottom: 10px;
+}
+
+
+
+main section .reviewed .appraisal {
+	/*float: none;*/
+	background-color: #28A745;
+	width: 30px;
+	border-radius: 10px;
+	display: block;
+	position: absolute;
+	top: 15px;
+	right: 25px;
+	text-align: center;
+
 }
 
 main section article header p {
