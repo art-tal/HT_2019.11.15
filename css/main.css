@@ -5,3 +5,48 @@
 }
 
 body {}
+
+/*//////////HEADER///////////*/
+
+body > header {
+	background-color: #1B5589;
+}
+
+header .col-md-11 {
+	margin: 17px 0;
+}
+
+header .logo {
+	display: inline-block;
+	height: 32px;
+	/*margin: 15px 20px 15px 0;*/
+}
+
+header ul {
+	display: inline-block;
+	margin-left: 20px;
+}
+
+header ul li {
+	display: inline-block;
+	list-style-type: none;
+	margin-right: 15px;
+}
+
+header li > a {
+	color: #7CA0BD;
+}
+
+header li > a.active {
+	color: #fff;
+}
+
+header li > a:hover {
+	color: #fff;
+	text-decoration: none;
+}
+
+header .user {
+	height: 48px;
+	margin: 10px 0;
+}
