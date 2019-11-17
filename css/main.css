@@ -6,6 +6,15 @@
 
 body {}
 
+.container {
+	padding: 0;
+}
+
+.row {
+	margin: 0;
+	padding: 0;
+}
+
 /*//////////HEADER///////////*/
 
 body > header {
@@ -69,6 +78,14 @@ main h1 {
 main hr {
 	margin-top: 0;
 	border-bottom: 1px solid #F9F9F9;
+}
+
+.col-md-6:nth-child(1) {
+	padding-left: 0;
+}
+
+.col-md-6:nth-child(2) {
+	padding-right: 0;
 }
 
 main .wrap {
@@ -224,10 +241,11 @@ main .legend > div {
 
 main section {
 	width: 100%;
-	margin: 25px 0 50px;
+	margin: 35px 0 50px;
 }
 
 main section h2 {
+	margin: 0 10px;
 	text-align: left;
 	border-bottom: 1px solid #F9F9F9;	
 }
@@ -344,6 +362,9 @@ div[name="header_settings"] h2 {
 }
 
 main form {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
 	margin-top: 25px;
 }
 
