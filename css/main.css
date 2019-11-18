@@ -28,7 +28,6 @@ header .col-md-11 {
 header .logo {
 	display: inline-block;
 	height: 32px;
-	/*margin: 15px 20px 15px 0;*/
 }
 
 header ul {
@@ -65,7 +64,6 @@ header .user {
 main h1, main h2 {
 	font-family: "SegoeWPLight", sans-serif;
 	color: #555;
-	/*font-weight: 300;*/
 	text-align: center;
     padding-bottom: 20px;
     margin-bottom: 0;
@@ -139,11 +137,6 @@ main button {
 	border-radius: 4px;
 }
 
-/*main button.more_news {	
-	color: #fff;
-	background-color: #6C757D;
-}*/
-
 main .grid_container {
 	display: grid;
 	grid-template-columns: 5fr 2fr 5fr;
@@ -156,19 +149,41 @@ main .grid_container {
 }
 
 .left_arrow, .right_arrow {
-	border: 1px solid #aaa;
 	border-radius: 3px;
 	padding: 5px 10px;
     width: max-content;
     font-size: 16px;
     font-weight: 600;
+	background-repeat: no-repeat;
+	-webkit-background-size: cover;
+	background-size: cover;
 }
 
 .grid_container .left_arrow {
+	padding: 5px 24px 5px 10px;
 	text-align: right;
 	justify-self: end;
-
+	background-image: url(../icons/block-big-left.png);
 }
+
+.grid_container .left_arrow.date {
+	padding: 7px 24px 6px 10px;
+	background-image: url(../icons/block-smal-left.png);
+	}
+
+.grid_container .right_arrow {
+	padding: 5px 21px 5px 19px;
+	background-image: url(../icons/block-big-right.png);
+	background-position: right center;
+}
+
+.grid_container .right_arrow.date {
+	padding: 7px 16px 6px 19px;
+	background-image: url(../icons/block-smal-right.png);
+	background-position: right center;
+}
+
+
 
 main .grid_container .date {
 	padding: 6px 10px;
@@ -181,12 +196,6 @@ main .grid_container .date {
 	font-size: 18px;
 	font-weight: bold;
 }
-
-/*main button.more_rewards {
-	color: #000;
-	background-color: #F8F9FA;
-}
-*/
 
 
 /*//////////Page Homework///////////*/
@@ -217,24 +226,20 @@ main .legend > div {
 }
 
 .current {
-/*main .legend .current {*/
 	background-color: #F5F5F5;
 }
 
 .reviewed {
-/*main .legend .reviewed {	*/
 	background-color: #6FD084;
 	color: #fff;
 }
 
 .under_review {
-/*main .legend .under_review {*/
 	background-color: #37B0C1;
 	color: #fff;
 }
 
 .overdue {
-/*main .legend .overdue {*/
 	background-color: #F98691;
 	color: #fff;
 }
@@ -263,7 +268,6 @@ main section article {
 	border: 1px solid #DDE1E5;
 	border-radius: 4px;
 	padding: 20px;
-	/*margin-right: 30px;*/
 	border-radius: 4px;
 	margin-bottom: 10px;
 }
@@ -277,7 +281,6 @@ main section article header h1{
 
 
 main section .reviewed .appraisal {
-	/*float: none;*/
 	background-color: #28A745;
 	width: 30px;
 	border-radius: 10px;
@@ -317,7 +320,6 @@ main section article form label {
 .reviewed header > h1, 
 .under_review header > h1, 
 .overdue header > h1 {
-/*.reviewed p, .under_review p, .overdue p, {*/
 	color: #fff;
 }
 
@@ -352,8 +354,6 @@ div[name="header_settings"] {
 }
 
 div[name="header_settings"] h2 {
-	/*text-align: center;*/
-	/*width: 39%;*/
 	padding: 15px 0;
 	font-size: 16px;
 	font-weight: 700;
@@ -369,20 +369,17 @@ main form {
 }
 
 main form[name="avatar"] img {
-	/*display: block;*/
 	width: 100%;
-	/*height: 256px;*/
 }
 
 main form[name="avatar"] input[type="file"] {
 	display: none;
 }
 
-main form[name="avatar"] input[type="file"] + label[for="choose_photo"] {
+main form[name="avatar"] input[type="file"] + label {
 	width: 100%;
 	border: none;
 	border-radius: 4px;
-	/*text-align: center;*/
 }
 
 .col-md-2 {
@@ -393,10 +390,6 @@ main form[name="avatar"] input[type="file"] + label[for="choose_photo"] {
 	padding-left: 30px;
 	padding-right: 0;
 }
-
-/*main .col-md-5:nth-child(2) {
-	padding: 0 30px;
-}*/
 
 main .col-md-5 input {
 	-webkit-box-sizing: border-box;
